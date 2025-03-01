@@ -33,7 +33,6 @@ public class LogicScript : MonoBehaviour
             PlayerPrefs.SetInt("highScore", highScore);
             PlayerPrefs.Save();
         }
-        //updateHighest();
     }
 
     public void restartGame()
@@ -48,22 +47,12 @@ public class LogicScript : MonoBehaviour
 
     public void startedGame()
     {
-        startScreen.SetActive(true);
+        startScreen.SetActive(false);
     }
 
-/*
     void Start()
     {
         highScore = PlayerPrefs.GetInt("highScore", 0);
-        updateHighest();
     }
-
-    private void updateHighest()
-    {
-        if (highScore.ToString() != null){
-            result.text = "High Score: " + highScore.ToString();
-        }
-    }
-*/
 }
 
